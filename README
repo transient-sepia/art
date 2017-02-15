@@ -1,0 +1,27 @@
+Additional perl modules must be installed:
+
+ Term::ReadKey;
+ DBI;
+ MIME::Lite;
+ Archive::Zip qw(:ERROR_CODES :CONSTANTS);
+
+Some variables must be set beforehand:
+
+ - user specific section on line 46
+
+Help below:
+
+	ART - AWR Report Tool
+
+        Usage: art.pl [-iht] -s <SID> -r <RECIPIENT> [-c <INTERVAL>]
+
+        <RECIPIENT> in: aaa, bbb
+
+        Default report type is html.
+
+        -c - specify custom interval in -i mode (in minutes).
+        -h - print this message.
+        -i - incremental reports.
+        -r - mail recipient.
+        -s - database name.
+        -t - text format.
